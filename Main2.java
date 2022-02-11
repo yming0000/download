@@ -70,7 +70,9 @@ public class Main2 {
                 } else {
                     u = urlString + u;
                 }
-                downloadFile(u, filePath);
+                try {
+                    downloadFile(u, filePath);
+                } catch (Exception e) {}
             }
         }
     }
